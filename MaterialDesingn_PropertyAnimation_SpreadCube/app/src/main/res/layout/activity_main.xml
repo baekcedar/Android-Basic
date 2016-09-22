@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hyangmok.android.materialdesingn_propertyanimation_spreadcube.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="SPREAD"
+            android:id="@+id/btnSpread"
+            android:gravity="center"
+            android:onClick="spread" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="combine"
+            android:id="@+id/btnCombine"
+            android:onClick="combine" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPIN"
+            android:id="@+id/btnSpin"
+            android:onClick="spin" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:animationCache="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#F44336"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#E91E63"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#9C27B0"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn4"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#673AB7"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn5"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#3F51B5"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn6"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#2196F3"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn7"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#00BCD4"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn8"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#4CAF50"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn9"
+            style="?android:attr/borderlessButtonStyle"
+            android:height="100dp"
+            android:background="#FFEB3B"
+            android:width="100dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<!-- 버튼별 색상
+b1  #F44336
+b2 	#E91E63
+b3	#9C27B0
+b4	#673AB7
+b5	#3F51B5
+b6	#2196F3
+b7	#00BCD4
+b8	#4CAF50
+b9	#FFEB3B
+-->
