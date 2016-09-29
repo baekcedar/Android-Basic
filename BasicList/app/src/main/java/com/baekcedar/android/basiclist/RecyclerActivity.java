@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class RecyclerActivity extends AppCompatActivity {
-    RecyclerData data;
+    RecyclerData  data;
     RecyclerView recyclerView;
 
     @Override
@@ -18,7 +18,7 @@ public class RecyclerActivity extends AppCompatActivity {
 
         ArrayList<RecyclerData> datas = new ArrayList<>();
         for( int i = 1 ; i <= 100 ; i ++ ) {
-            data = new RecyclerData();
+             data = new RecyclerData();
 
             data.title = i+" "+"기억상실";
             data.name = "거미";

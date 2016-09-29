@@ -3,13 +3,12 @@ package com.baekcedar.android.basiclist;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7;
+    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn5 = (Button) findViewById(R.id.button5);
         btn6 = (Button) findViewById(R.id.button6);
         btn7 = (Button) findViewById(R.id.button7);
+        btn8 = (Button) findViewById(R.id.button8);
+        btn9 = (Button) findViewById(R.id.button9);
 
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn5.setOnClickListener(this);
         btn6.setOnClickListener(this);
         btn7.setOnClickListener(this);
+        btn8.setOnClickListener(this);
+        btn9.setOnClickListener(this);
 
 
     }
@@ -47,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button5: intent = new Intent(this, CustomGridActivity.class); break;
             case R.id.button6: intent = new Intent(this, ExpandableActivity.class); break;
             case R.id.button7: intent = new Intent(this, RecyclerActivity.class); break;
+            case R.id.button8: intent = new Intent(this, RecyclerAnimationActivity.class); break;
+            case R.id.button9: intent = new Intent(this, RecyclerCardActivity.class); break;
         }
         startActivity(intent);
     }
